@@ -1,0 +1,12 @@
+.island {
+  --island-bg: #fff;
+  --island-radius: 20px;
+  --island-padding: 25px;
+
+  background: var(--island-bg);
+  border-radius: var(--island-radius);
+  padding: var(--island-padding);
+
+  /* опционально — чтобы «остров» отделялся от фона страницы */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}

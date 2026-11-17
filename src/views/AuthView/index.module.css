@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 20px;
+  background: url('/bg/1.png') center / cover no-repeat fixed;
+}
+
+.island {
+  display: flex;
+  gap: 97px;
+  max-width: 1040px;
+  overflow: hidden;
+}
+
+/* Island задаёт padding через переменную — задаём общий паддинг карточки */
+.island.island {
+  padding: 48px;
+}
+
+.left {
+  display: flex;
+  flex: 0 0 auto;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  align-self: flex-start;
+  width: auto;
+  height: 44px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.introText {
+  opacity: 0.85;
+}
+
+.right {
+  display: flex;
+  width: 396px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.link {
+  align-self: center;
+  color: #4f8cf5;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 860px) {
+  .island {
+    flex-direction: column;
+    max-width: 520px;
+  }
+
+  .island.island {
+    padding: 32px;
+  }
+
+  .left,
+  .right {
+    flex: none;
+  }
+
+  .right {
+    width: auto;
+  }
+}

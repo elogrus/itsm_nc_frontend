@@ -1,0 +1,73 @@
+/* Button.module.css */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700; /* bold */
+  line-height: 20px;
+  cursor: pointer;
+  outline: none;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ===== Primary: синяя ===== */
+.primary {
+  background-color: #4f8cf5;
+  color: #ffffff;
+  border-color: #4f8cf5;
+}
+
+.primary:hover:not(:disabled) {
+  border-color: #295299;
+}
+
+.primary:active:not(:disabled) {
+  background-color: #2c5eb3;
+  border-color: #2c5eb3;
+}
+
+/* ===== Secondary: белая ===== */
+.secondary {
+  background-color: #ffffff;
+  color: #344054;
+  border-color: #d0d5dd;
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: #8891a1;
+}
+
+.secondary:active:not(:disabled) {
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
+}
+
+/* ===== Disabled ===== */
+.disabled,
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ===== Focus-visible ===== */
+.primary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(79, 140, 245, 0.35);
+}
+
+.secondary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(208, 213, 221, 0.6);
+}

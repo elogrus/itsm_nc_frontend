@@ -1,0 +1,73 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 20px;
+  background: url('/bg/1.png') center / cover no-repeat fixed;
+}
+
+.island.island {
+  display: flex;
+  width: 573px;
+  min-width: 573px;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 48px;
+}
+
+.logo {
+  display: block;
+  align-self: center;
+  width: auto;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  text-align: center;
+}
+
+.description.description {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 28px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+/* 28px + 21px gap = 49px от PinInput до первой кнопки */
+.form > :first-child {
+  margin-bottom: 28px;
+}
+
+.button {
+  width: 396px;
+}
+
+@media (max-width: 560px) {
+  .island.island {
+    padding: 32px 24px;
+  }
+}

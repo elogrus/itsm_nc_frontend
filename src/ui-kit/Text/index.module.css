@@ -1,0 +1,35 @@
+/* Text.module.css */
+
+.text {
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Заголовок 1 — 36px bold */
+.heading1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+/* Заголовок 2 — 32px bold */
+.heading2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* Основной текст 1 — 24px thin */
+.body1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 32px;
+}
+
+/* Основной текст 2 — 18px regular */
+.body2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}

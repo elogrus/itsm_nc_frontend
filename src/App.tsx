@@ -1,14 +1,26 @@
 import { defineComponent } from 'vue'
-import Button from './ui-kit/Button/Button'
+import { RouterLink, RouterView } from 'vue-router'
 
 export default defineComponent({
   name: 'App',
   setup() {
     return () => (
-      <div id="app">
-        <h1>Hello TSX + Pinia</h1>
-        <Button>asd</Button>
-      </div>
+      <>
+        <header style="position: fixed; opacity: 0.5; width: 100%;">
+          <nav style="padding: 10px 20px; background-color: #696969; color: #FFFFFF; display: flex; gap: 20px;">
+            <RouterLink style="color: #FFFFFF" to="/">
+              Главная
+            </RouterLink>
+            <RouterLink style="color: #FFFFFF" to="/cmp">
+              Компоненты
+            </RouterLink>
+          </nav>
+        </header>
+
+        <main>
+          <RouterView />
+        </main>
+      </>
     )
   },
 })
